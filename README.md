@@ -1,20 +1,21 @@
-Fyp
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up</title>
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     body {
       display: flex;
-      height: 100vh;
+      flex-direction: row;
+      min-height: 100vh;
     }
 
     .left {
@@ -23,30 +24,38 @@ Fyp
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
+      padding: 20px;
     }
 
     .left img {
-      max-width: 90%;
+      max-width: 100%;
+      height: auto;
       border-radius: 10px;
     }
 
     .right {
       flex: 1;
-      padding: 60px;
+      padding: 50px;
+      background: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
+    .form-container {
+      max-width: 400px;
+      margin: auto;
+    }
+
     h2 {
-      margin-bottom: 30px;
       font-size: 32px;
+      margin-bottom: 30px;
     }
 
     label {
-      margin-top: 15px;
       font-weight: bold;
+      margin-top: 15px;
+      display: block;
     }
 
     input[type="text"],
@@ -63,6 +72,7 @@ Fyp
       margin-top: 20px;
       display: flex;
       align-items: center;
+      font-size: 14px;
     }
 
     .checkbox input {
@@ -81,54 +91,79 @@ Fyp
       border-radius: 25px;
       cursor: pointer;
       font-size: 16px;
+      width: 100%;
     }
 
     .signin-link {
       margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
     }
 
     .signin-link a {
       color: #666;
       text-decoration: none;
     }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .left,
+      .right {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .left {
+        order: 2;
+      }
+
+      .right {
+        order: 1;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="left">
-    <!-- Image side -->
-    <img src="https://via.placeholder.com/300x500.png?text=User+Image" alt="User">
+    <img src="https://via.placeholder.com/400x500.png?text=User+Image" alt="User">
   </div>
   <div class="right">
-    <h2>Sign Up</h2>
-    <form>
-      <label>Full Name</label>
-      <input type="text" placeholder="Zachary Davis" required>
+    <div class="form-container">
+      <h2>Sign Up</h2>
+      <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Zachary Davis" required>
 
-      <label>Email</label>
-      <input type="email" placeholder="zachary-davis@example.com" required>
+        <label>Email</label>
+        <input type="email" placeholder="zachary-davis@example.com" required>
 
-      <label>Username</label>
-      <input type="text" placeholder="zacharydavis" required>
+        <label>Username</label>
+        <input type="text" placeholder="zacharydavis" required>
 
-      <label>Password</label>
-      <input type="password" required>
+        <label>Password</label>
+        <input type="password" required>
 
-      <label>Repeat Password</label>
-      <input type="password" required>
+        <label>Repeat Password</label>
+        <input type="password" required>
 
-      <div class="checkbox">
-        <input type="checkbox" required>
-        <span>I agree to the <a href="#">Terms of User</a></span>
-      </div>
+        <div class="checkbox">
+          <input type="checkbox" required>
+          <span>I agree to the <a href="#">Terms of User</a></span>
+        </div>
 
-      <div class="buttons">
-        <button type="submit">Sign Up</button>
-      </div>
+        <div class="buttons">
+          <button type="submit">Sign Up</button>
+        </div>
 
-      <div class="signin-link">
-        Already have an account? <a href="#">Sign in →</a>
-      </div>
-    </form>
+        <div class="signin-link">
+          Already have an account? <a href="#">Sign in →</a>
+        </div>
+      </form>
+    </div>
   </div>
 </body>
 </html>
