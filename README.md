@@ -129,7 +129,7 @@
 </head>
 <body>
   <div class="left">
-    <img src="https://via.placeholder.com/400x500.png?text=User+Image" alt="User">
+    <img src="IMG_8372.jpeg" alt="User">
   </div>
   <div class="right">
     <div class="form-container">
