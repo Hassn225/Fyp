@@ -174,6 +174,7 @@ border-radius: 25px;
 
         <div class="buttons">
           <button type="submit">Sign Up</button>
+           <a href="signup.html" class="buttons"> </a>
         </div>
 
         <div class="signin-link">
