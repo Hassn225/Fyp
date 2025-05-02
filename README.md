@@ -65,14 +65,14 @@
       border-top: 0px;
         border-left: 0px;
           border-right: 0px;
-            border-bottom: 1px solid grey;
+            border-bottom: 1px solid linear-gradient(to right, #d16ba5, #86a8e7);
       width: 100%;
       padding: 5px;
       height: 25px;
       background: transparent;
     }
     input:hover {
-      color: linear-gradient (to right, #d16ba5, #86a8e7);
+      color: lightgray ;
       }
       input:focus {
         border-bottom: 2px solid;
