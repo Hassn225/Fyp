@@ -28,6 +28,7 @@
     }
 
     .left img {
+      mix-blend-mode: overlay;
       max-width: 100%;
       height: auto;
       border-radius: 10px;
