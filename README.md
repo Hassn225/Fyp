@@ -140,7 +140,7 @@
 </head>
 <body>
   <div class="left">
-    <img src="https://via.placeholder.com/400x500.png?text=User+Image" alt="User">
+    <img src="IMG_8372.jpeg" alt="User">
   </div>
   <div class="right">
     <div class="form-container">
@@ -156,10 +156,10 @@
         <input type="text" placeholder="zacharydavis" required>
 
         <label>Password</label>
-        <input type="password" required>
+        <input type="password" placeholder="**********" required>
 
         <label>Repeat Password</label>
-        <input type="password" required>
+        <input type="password" placeholder="**********" required>
 
         <div class="checkbox">
           <input type="checkbox" required>
