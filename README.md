@@ -75,7 +75,7 @@
       color: #b3708f ;
       }
       input:focus {
-        border-bottom: 2px solid;
+        border-bottom: 2px solid linear-gradient (to right, #d16ba5, #86a8e7);
       outline: none;
     }
 
@@ -88,6 +88,7 @@
 
     .checkbox input {
       margin-right: 10px;
+accent-color: #b3708f;
     }
 
     .buttons {
@@ -104,6 +105,10 @@
       font-size: 16px;
       width: 100%;
     }
+.buttons hover {
+background: black;
+}
+
 
     .signin-link {
       margin-top: 15px;
