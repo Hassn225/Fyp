@@ -154,13 +154,13 @@ border-radius: 25px;
       <h2>Sign Up</h2>
       <form>
         <label>Full Name</label>
-        <input type="text" placeholder="Zachary Davis" required>
+        <input type="text" placeholder="Haji Bhola" required>
 
         <label>Email</label>
-        <input type="email" placeholder="zachary-davis@example.com" required>
+        <input type="email" placeholder="Haji-Bhola@example.com" required>
 
         <label>Username</label>
-        <input type="text" placeholder="zacharydavis" required>
+        <input type="text" placeholder="hajibhola" required>
 
         <label>Password</label>
         <input type="password" placeholder="**********" required>
