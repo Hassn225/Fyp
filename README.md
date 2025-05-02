@@ -72,7 +72,7 @@
       background: transparent;
     }
     input:hover {
-      color: lightgray ;
+      color: #b3708f ;
       }
       input:focus {
         border-bottom: 2px solid;
