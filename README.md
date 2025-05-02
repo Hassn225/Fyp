@@ -145,10 +145,10 @@
         <input type="text" placeholder="zacharydavis" required>
 
         <label>Password</label>
-        <input type="password" required>
+        <input type="password" placeholder="********" required>
 
         <label>Repeat Password</label>
-        <input type="password" required>
+        <input type="password" placeholder="********" required>
 
         <div class="checkbox">
           <input type="checkbox" required>
