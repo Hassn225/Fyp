@@ -63,7 +63,7 @@
     input[type="password"] {
       width: 100%;
       padding: 12px;
-      margin-top: 5px;
+      margin-top: 0px;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
