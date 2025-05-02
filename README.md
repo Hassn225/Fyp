@@ -53,6 +53,7 @@
     }
 
     label {
+      color: darkgrey;
       font-weight: bold;
       margin-top: 15px;
       display: block;
@@ -61,11 +62,21 @@
     input[type="text"],
     input[type="email"],
     input[type="password"] {
+      border-top: 0px;
+        border-left: 0px;
+          border-right: 0px;
+            border-bottom: 1px solid grey;
       width: 100%;
-      padding: 12px;
-      margin-top: 0px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      padding: 5px;
+      height: 25px;
+      background: transparent;
+    }
+    input:hover {
+      color: lightgray;
+      }
+      input:focus {
+        border-bottom: 2px solid;
+      outline: none;
     }
 
     .checkbox {
@@ -129,7 +140,7 @@
 </head>
 <body>
   <div class="left">
-    <img src="IMG_8372.jpeg" alt="User">
+    <img src="https://via.placeholder.com/400x500.png?text=User+Image" alt="User">
   </div>
   <div class="right">
     <div class="form-container">
@@ -145,10 +156,10 @@
         <input type="text" placeholder="zacharydavis" required>
 
         <label>Password</label>
-        <input type="password" placeholder="********" required>
+        <input type="password" required>
 
         <label>Repeat Password</label>
-        <input type="password" placeholder="********" required>
+        <input type="password" required>
 
         <div class="checkbox">
           <input type="checkbox" required>
