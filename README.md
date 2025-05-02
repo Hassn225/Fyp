@@ -72,7 +72,7 @@
       background: transparent;
     }
     input:hover {
-      color: lightgray;
+      color: linear-gradient (to right, #d16ba5, #86a8e7);
       }
       input:focus {
         border-bottom: 2px solid;
