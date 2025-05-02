@@ -106,7 +106,8 @@ accent-color: #b3708f;
       width: 100%;
     }
 .buttons:hover {
-background: #572a45;
+color: #572a45;
+border-radius: 25px;
 }
 
 
