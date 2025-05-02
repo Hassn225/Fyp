@@ -105,8 +105,8 @@ accent-color: #b3708f;
       font-size: 16px;
       width: 100%;
     }
-.buttons hover {
-background: black;
+.buttons:hover {
+background: #572a45;
 }
 
 
