@@ -88,27 +88,31 @@
 
     .checkbox input {
       margin-right: 10px;
-accent-color: #b3708f;
+      accent-color: #b3708f;
     }
 
-    .buttons {
-      margin-top: 20px;
+      .buttons {
+    margin-top: 20px;
     }
 
-    .buttons button {
-      background: linear-gradient(to right, #d16ba5, #86a8e7);
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 16px;
-      width: 100%;
+    .buttons .button {
+    display: block;
+    background: linear-gradient(to right, #d16ba5, #86a8e7);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center; 
+    text-decoration: none; 
+    width: 100%;
     }
-.buttons:hover {
-color: #572a45;
-border-radius: 25px;
-}
+
+
+    .buttons .button:hover {
+    color: #572a45;
+    }
 
 
     .signin-link {
