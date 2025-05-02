@@ -172,11 +172,10 @@ border-radius: 25px;
           <span>I agree to the <a href="#">Terms of User</a></span>
         </div>
 
-        <div class="buttons">
-          <button type="submit">Sign Up</button>
-           <a href="signup.html" class="buttons"> </a>
-        </div>
-
+      <div class="buttons">
+    <a href="signup.html" class="button">Sign Up</a>
+    </div>
+ 
         <div class="signin-link">
           Already have an account? <a href="signin.html">Sign in →</a>
         </div>
