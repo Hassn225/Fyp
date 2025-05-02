@@ -147,7 +147,7 @@ border-radius: 25px;
 </head>
 <body>
   <div class="left">
-    <img src="IMG_8372.jpeg" alt="User">
+    <img src="IMG_0563.jpeg" alt="User">
   </div>
   <div class="right">
     <div class="form-container">
