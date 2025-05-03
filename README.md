@@ -13,20 +13,16 @@
 
     body {
       display: flex;
-      flex-direction: row;
       min-height: 100vh;
-      justify-content: center;
-       align-items: center;
-      
     }
 
     .left {
       flex: 1;
       background: linear-gradient(to right, #d16ba5, #86a8e7);
       display: flex;
-      justify-content: left;
+      justify-content: center;
       align-items: center;
-      padding: 20px;
+      color: white;
     }
 
     .left img {
@@ -42,7 +38,7 @@
       background: #fff;
       display: flex;
       flex-direction: column;
-      justify-content: right;
+      justify-content: center;
     }
 
     .form-container {
