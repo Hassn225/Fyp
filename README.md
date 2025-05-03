@@ -24,7 +24,7 @@
       flex: 1;
       background: linear-gradient(to right, #d16ba5, #86a8e7);
       display: flex;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
       padding: 20px;
     }
@@ -42,7 +42,7 @@
       background: #fff;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: right;
     }
 
     .form-container {
