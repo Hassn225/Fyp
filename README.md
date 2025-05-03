@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -17,18 +18,25 @@
 
     .left {
       flex: 1;
-      background: linear-gradient(to right, #d16ba5, #86a8e7);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
+      position: relative;
     }
 
     .left img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .left::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(209, 107, 165, 0.7), rgba(134, 168, 231, 0.7));
       mix-blend-mode: overlay;
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
     }
 
     .right {
@@ -48,33 +56,36 @@
     h2 {
       font-size: 32px;
       margin-bottom: 30px;
+      font-weight: bold;
     }
 
     label {
-      color: darkgrey;
+      color: #888;
       font-weight: bold;
       margin-top: 15px;
       display: block;
+      font-size: 14px;
     }
 
     input[type="text"],
     input[type="email"],
     input[type="password"] {
-      border-top: 0px;
-        border-left: 0px;
-          border-right: 0px;
-            border-bottom: 1px solid linear-gradient(to right, #d16ba5, #86a8e7);
       width: 100%;
-      padding: 5px;
-      height: 25px;
+      padding: 10px 5px;
+      border: none;
+      border-bottom: 2px solid #ccc;
       background: transparent;
+      font-size: 14px;
+      transition: all 0.3s ease;
     }
-    input:hover {
-      color: #b3708f ;
-      }
-      input:focus {
-        border-bottom: 2px solid linear-gradient (to right, #d16ba5, #86a8e7);
+
+    input:focus {
+      border-bottom: 2px solid #b3708f;
       outline: none;
+    }
+
+    input:hover {
+      color: #b3708f;
     }
 
     .checkbox {
@@ -89,29 +100,27 @@
       accent-color: #b3708f;
     }
 
-      .buttons {
-    margin-top: 20px;
+    .buttons {
+      margin-top: 20px;
     }
 
     .buttons .button {
-    display: block;
-    background: linear-gradient(to right, #d16ba5, #86a8e7);
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center; 
-    text-decoration: none; 
-    width: 100%;
+      display: block;
+      background: linear-gradient(to right, #d16ba5, #86a8e7);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      width: 100%;
     }
-
 
     .buttons .button:hover {
-    color: #572a45;
+      color: #572a45;
     }
-
 
     .signin-link {
       margin-top: 15px;
@@ -122,9 +131,6 @@
     .signin-link a {
       color: #666;
       text-decoration: none;
-    }
-
-    
     }
   </style>
 </head>
@@ -156,10 +162,10 @@
           <span>I agree to the <a href="#">Terms of User</a></span>
         </div>
 
-      <div class="buttons">
-    <a href="signup.html" class="button">Sign Up</a>
-    </div>
- 
+        <div class="buttons">
+          <a href="signup.html" class="button">Sign Up</a>
+        </div>
+
         <div class="signin-link">
           Already have an account? <a href="signin.html">Sign in →</a>
         </div>
