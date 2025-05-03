@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,6 +18,7 @@
     .left {
       flex: 1;
       position: relative;
+      background: linear-gradient(to right, #d16ba5, #86a8e7);
     }
 
     .left img {
