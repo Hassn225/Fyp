@@ -15,6 +15,9 @@
       display: flex;
       flex-direction: row;
       min-height: 100vh;
+      justify-content: center;
+       align-items: center;
+      
     }
 
     .left {
@@ -130,7 +133,10 @@
       body {
         flex-direction: column;
       }
-
+       @media (max-width: 1024px) {
+      body {
+        flex-direction: column;
+      }
       .left,
       .right {
         flex: none;
